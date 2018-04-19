@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
                 case com.dj81.hereiam.R.id.navigation_list:
+                    DBUtils._instance.deleteAll();
                     return true;
                 case com.dj81.hereiam.R.id.navigation_config:
                     Intent intent=new Intent(MainActivity.this, ConfigActivity.class);
@@ -42,6 +43,9 @@ public class MainActivity extends AppCompatActivity {
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
         android.view.Menu menu = navigation.getMenu();
         menu.findItem(com.dj81.hereiam.R.id.navigation_list).setChecked(true);
+
+        /**  DB 초기화 */
+        new DBUtils(this);
     }
 
 }

@@ -5,7 +5,9 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".main.ConfigActivity">
+    tools:context=".main.ConfigActivity"
+    android:orientation="horizontal"
+    >
 
     <LinearLayout
         android:orientation="horizontal"
@@ -19,7 +21,7 @@
             android:layout_marginLeft="@dimen/activity_horizontal_margin"
             android:layout_marginTop="@dimen/activity_horizontal_margin"
             android:background="@color/colorOrange"
-            android:text="설정하기"
+            android:text="추가"
             android:textColor="@color/colorWhite"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -44,7 +46,7 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="70dp"
         >
     <ListView
         android:id="@+id/listview"
