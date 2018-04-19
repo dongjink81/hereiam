@@ -4,6 +4,6 @@
     <string name="title_notifications">설 정</string>
 
     <string name="guide_dashboard"><b>현재 위치를 공유하는 대상 목록입니다.</b></string>
-    <string name="guide_config"><b>연락처에서 위치정보를 공유할 대상을 선택합니다.</b></string>
-    <string name="guide_config_rejected"><b>연락처가 존재하지 않습니다. 주소록에 등록하십시오.</b></string>
+    <string name="guide_config"><b>위치정보를 공유할 대상을 선택합니다.</b></string>
+    <string name="guide_config_rejected"><b>주소록앱이 존재하지 않습니다.</b></string>
 </resources>

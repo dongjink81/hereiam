@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
                 case com.dj81.hereiam.R.id.navigation_config:
                     Intent intent=new Intent(MainActivity.this, ConfigActivity.class);
                     startActivity(intent);
+                    overridePendingTransition(0,0);
                     return true;
             }
             return false;

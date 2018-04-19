@@ -23,6 +23,7 @@ public class ConfigActivity extends AppCompatActivity {
                 case com.dj81.hereiam.R.id.navigation_list:
                     android.content.Intent intent=new android.content.Intent(ConfigActivity.this, MainActivity.class);
                     startActivity(intent);
+                    overridePendingTransition(0,0);
                     return true;
                 case com.dj81.hereiam.R.id.navigation_config:
                     return true;
