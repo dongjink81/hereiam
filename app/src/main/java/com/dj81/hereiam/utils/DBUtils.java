@@ -1,4 +1,4 @@
-package com.dj81.hereiam.main;
+package com.dj81.hereiam.utils;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -26,6 +26,9 @@ public class DBUtils extends SQLiteOpenHelper {
     private static final String KEY_ID = "id";
     private static final String KEY_NAME = "name";
     private static final String KEY_PH_NO = "phone_number";
+    private static final String KEY_CONFIG_M = "configMissingCall";
+    private static final String KEY_CONFIG_A = "configAllCall";
+    private static final String KEY_CONFIG_P = "configPowerOff";
 
     public static DBUtils _instance=null;
 

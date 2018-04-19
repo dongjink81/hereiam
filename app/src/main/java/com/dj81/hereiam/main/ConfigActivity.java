@@ -1,6 +1,5 @@
 package com.dj81.hereiam.main;
 
-import android.bluetooth.le.AdvertisingSetParameters;
 import android.database.Cursor;
 import android.provider.ContactsContract;
 import android.os.Bundle;
@@ -15,7 +14,11 @@ import android.content.Intent;
 import android.widget.ListView;
 
 import com.dj81.hereiam.R;
-import static com.dj81.hereiam.main.CoreUtils.*;
+import com.dj81.hereiam.utils.ContactVO;
+import com.dj81.hereiam.utils.CoreUtils;
+import com.dj81.hereiam.utils.DBUtils;
+
+import static com.dj81.hereiam.utils.CoreUtils.*;
 
 import java.util.ArrayList;
 import java.util.List;

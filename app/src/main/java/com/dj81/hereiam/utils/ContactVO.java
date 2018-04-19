@@ -1,6 +1,6 @@
-package com.dj81.hereiam.main;
+package com.dj81.hereiam.utils;
 
-import java.util.Date;
+import com.dj81.hereiam.utils.DBUtils;
 
 public class ContactVO {
     String id;
@@ -11,7 +11,7 @@ public class ContactVO {
 
     }
     public ContactVO(String id, String name, String phone_number){
-        this.id = id==null?DBUtils._instance.getNextPk():id;
+        this.id = id==null? DBUtils._instance.getNextPk():id;
         this.name = name;
         this.phone_number = phone_number;
     }

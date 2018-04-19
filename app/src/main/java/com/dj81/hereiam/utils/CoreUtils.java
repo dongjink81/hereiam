@@ -1,8 +1,7 @@
-package com.dj81.hereiam.main;
+package com.dj81.hereiam.utils;
 
 import android.widget.ArrayAdapter;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -22,7 +21,7 @@ public class CoreUtils {
 
         adapter.notifyDataSetChanged();
 
-        List<ContactVO> contacts=DBUtils._instance.getAllContacts();
+        List<ContactVO> contacts= DBUtils._instance.getAllContacts();
         for(ContactVO vo : contacts){
             adapter.add(vo.toString());
         }
